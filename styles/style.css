@@ -1,0 +1,140 @@
+html {
+    /* https://developers.google.com/fonts */
+    font-family: 'Comic Neue', serif;
+    font-size: 20px;
+    background-color: whitesmoke;
+}
+
+body {
+    width: 600px;
+    margin: 20px auto;
+    /* margin: 10px 50px 20px; */
+    background-color: bisque;
+    padding: 20px 50px 20px;
+    border: 1px solid black;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    /* text-shadow: 3px 3px 1px black; */
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+p,li {
+    color: black;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+    /* border: 1px solid black; */
+}
+
+/* applies to img elements */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+}
+
+/* applies to div elements with class="warning" 
+    note: multiple classes can be used in HTML, e.g., <p class= "red fancy"> can apply
+    to css selectors with .red and .fancy
+*/
+div.warning {
+width: 100%;
+border: 2px solid yellow;
+color: white;
+background-color: darkred;
+padding: 0.8em 0.8em 0.6em;
+}
+
+/* applies to elements with id="customized" */
+#customized {
+font:
+    16px Lucida Grande,
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+/* matches elements of every type */
+* {
+    font-size: 30px
+}
+
+/* Attribute selectors: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+/* Internal links, beginning with "#" */
+a[href^="#"] {
+    background-color: gold;
+  }
+
+  /* Links with "example" anywhere in the URL */
+a[href*="example"] {
+    background-color: silver;
+  }
+
+/* Links that start with "https://" and end in ".org" */
+a[href^="https://"][href$=".org"] {
+  color: green;
+}
+
+/* A pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). 
+    Pseudo-classes: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+*/
+/* Any button over which the user's pointer is hovering */
+button:hover {
+    color: blue;
+  }
+
+/* next-sibling combinators: https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator */
+/* paragraphs that come immediately after any image */
+img + p {
+    font-weight: bold;
+  }
+
+/* subsequent-sibling combinators: https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator */
+/* The subsequent-sibling combinator (~, a tilde) separates two selectors and matches all instances of the second element that follow the first element (not necessarily immediately) and share the same parent element. */
+
+/* child combinator: https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator */
+/* The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first. */
+/* List items that are children of the "my-things" list */
+ul.my-things > li {
+    margin: 2em;
+  }
+
+/* descendent combinator: https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator */
+/* combines two selectors such that elements matched by the second selector are selected if they have an ancestor element matching the first selector */
+/* List items that are descendants of the "my-things" list */
+ul.my-things li {
+    margin: 2em;
+  }
+
+/* pseudo-elements: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements */
+/* lets you style a specific part of the selected element(s). */
+/* The first line of every <p> element. */
+p::first-line {
+    color: blue;
+    text-transform: uppercase;
+  }

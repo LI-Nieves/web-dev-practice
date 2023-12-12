@@ -1,0 +1,145 @@
+<!-- 
+    Types of elements:
+        <em> is italics
+        <strong> is bold
+
+    Entity references for special characters:
+        < uses &lt;
+        > uses &gt;
+        " uses &quot;
+        ' uses &apos;
+        & uses &amp;
+
+    Types of <meta>
+        There are "name" and "content" attributes. For example...
+        <meta name="author" content="Lee Nieves" />
+        <meta name="description" content="This page is about Lee!" />
+
+     Basic website sections:
+            header
+                big strip across the top with a heading, logo, etc.
+                <header>
+            navigation bar
+                links to site's main sections
+                usually presented as a menu or something
+                <nav>
+            main content
+                big area in center with most of the content
+                <main>, with subsections like <article>, <section>, and <div>
+            sidebar
+                peripheral info
+                <aside>, normally placed inside main
+            footer
+                strip across the bottom with fine print, contact, etc.
+                <footer>
+    Other elements:
+        <span> 
+            Inline non-semantic element
+            should only use if you can't think of a better semantic text element to wrap your content, or don't want to add any specific meaning.
+            Example: editor's note
+        <div>
+            block level non-semantic element
+            should only use if you can't think of a better semantic block element to use, or don't want to add any specific meaning
+            Example: a shopping cart widget that you could choose to pull up at any point during your time on an e-commerce site
+        <br>
+            line break element
+        <hr>
+            shown as a horizontal rule
+            creates a horizontal rule in the document that denotes a thematic change in the text
+
+    Mark-up validation service: https://validator.w3.org/
+        determines what's wrong with your HTML page
+-->
+
+<!doctype html>
+
+<!-- The <html> element wraps all the content on the page. Sometimes known as the root element. -->
+<html lang="en-us">
+    <!-- The <html> element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. -->
+    <head>
+        <!-- The <meta> element represents metadata that cannot be represented by other HTML meta-related elements. -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link href="styles/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue" rel="stylesheet">
+        <!-- defer is used to make sure JS is loaded after HTML is done being parsed -->
+        <script src="scripts/main.js" defer></script>
+        <!-- This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. -->
+        <title>Beb</title>  
+    </head>
+    <body>
+        <a href="https://www.google.com" title="Google, lol" id="who_laf"><h1>Laf beb</h1></a>
+        <img src="images/bebs.JPG" alt="bebs">
+        
+        <h2 id="the_laf">Very much</h2>
+        <p>When I see beb, I will</p>
+        <ol>
+            <li>Smell</li>
+            <li>Lick</li>
+        </ol>
+        
+            <h3>Big laf</h3>
+        <p>I love beb, because</p>
+        <ul>
+            <li>Good smell</li>
+            <li>Good lick</li>
+        </ul>
+
+        <h4>Info on laf</h4>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">A link</a>
+        <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US" download="firefox-installer.exe">Download Firefox</a>
+
+        <button>Change user</button>
+
+        <!-- using the disabled attribute prevents the end user from entering text into the input box -->
+        <input type="text" disabled="disabled" />
+        <input type="text" disabled />
+
+        <!-- text input is allowed, as it doesn't contain the disabled attribute -->
+        <input type="text" />
+
+        <p>Here's a <a href="practice pages/hummus.html">hummus recipe</a>!</p>
+
+        <p>Want to know who I <a href="index.html#who_laf">laf</a>?</p>
+
+        <a href="mailto:Nieves.L@outlook.com">Let me know how much you laf beb!</a>
+
+        <p>Names I use for my beb:</p>
+        <dl>
+            <dt>Beb</dt>
+            <dd>
+                Classic name
+            </dd>
+            <dt>Bebbin largest</dt>
+            <dd>
+                Because he beb
+            </dd>
+            <dd>
+                Because he large
+            </dd>
+            <dt>Poo</dt>
+            <dd>
+                Because he poo
+            </dd>
+        </dl>
+
+        <p>Here is a blockquote from <a href="https://maid-dragon.fandom.com/wiki/Kobayashi-san_Chi_no_Maid_Dragon_Wiki"><cite>the Kobayashi wiki</cite></a>:</p>
+        <blockquote cite="https://maid-dragon.fandom.com/wiki/Kobayashi-san_Chi_no_Maid_Dragon_Wiki">
+            <p>
+                As office worker Kobayashi gets ready for work, she is greeted by a large 
+                dragon right outside her front door. The dragon immediately transforms into 
+                a human girl in a maid outfit, and introduces herself as Tohru. 
+            </p>
+        </blockquote>
+
+        <p>Here's a quote from <a href=""><cite>the Kobayashi wiki</cite></a>: 
+            <q cite="https://maid-dragon.fandom.com/wiki/Kobayashi">Kobayashi (小林) is the main protagonist of Kobayashi-san Chi no Maid Dragon.</q>
+        </p>
+
+        <p>
+            Did you know what <abbr title="Big Edible Booty">BEB</abbr> stands for?
+        </p>
+
+        </body>
+</html>
